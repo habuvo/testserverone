@@ -16,7 +16,7 @@ func New() personServer {
 
 func (p personServer) GetPerson(ctx context.Context, in *proto.GetRequest) (*proto.Person, error) {
 	return &proto.Person{
-		Name: 0,
+		Name: "test name",
 	}, nil
 }
 
